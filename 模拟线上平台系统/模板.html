@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Backgroundsystem.css">
+    <script src="jquery-3.1.1.min.js"></script>
+
+</head>
+<body>
+    <!-- 版心 -->
+    <main class="main">
+        <!-- 标题 -->
+        <header>
+            <strong>线上学院后台管理系统</strong> 
+            <span><a href="#" class="headasie">前往官网</a><span class="headasie">张三</span></span>
+        </header>
+        
+        <article>
+            <!-- 左边的导航 -->
+            <nav class="nav">
+            <ul id="nav">
+                <li>概览</li>
+                <li>学生账号管理</li>
+                <li>后台账号管理</li>
+                <li>失物招领</li>
+                <li>新闻管理</li>
+                <li>在线问答</li>
+                <li>资料共享</li>
+                <li>值班管理</li>
+            </ul>
+            </nav> 
+            <!-- 右边的内容 -->
+            <aside class="asie">
+                <!-- 概览模块 -->
+                <section id="summary" style="display: block;">
+                    <!-- 今日值班 -->
+                    <strong >今日值班</strong>
+                    <div>下午 5-6 节课 陈某某</div>
+                    <div class="bordertop">下午 7-8 节课 陈某某</div>
+                    <!-- 今日新增内容 -->
+                    <strong >今日新增内容</strong>
+                    <nav>新闻</nav>
+                    <div>这是新闻标题  by 林某某<span><button class="mbtn">发布</button><button class="mbtn">查看</button></span></div>
+                    <nav>失物招领</nav>
+                    <div>失物标题<span><button class="bbtn">查看详情</button></span></div>
+                    <div class="bordertop">失物标题<p>已找回</p><p>学院托管</p><span><button class="bbtn">查看详情</button></span></div>
+                    <nav>在线问答(12)</nav>
+                    <div>这是在线问答的问题内容<span><button class="mbtn">查看</button></span></div>
+                    <div class="bordertop">这是在线问答的问题内容<p>已解决</p><span><button class="mbtn">查看</button></span></div>
+                </section>
+                <!-- 学生账号管理模块 -->
+                <section id="s-manage" >
+                    <button class="bbtn">添加账号</button><button class="bbtn">导入账号</button><button class="bbtn">班级管理</button>
+                    <table rules="rows">
+                        <tr>
+                        <td>学号</td>
+                        <td>姓名</td>
+                        <td>性别</td>
+                        <td>联系方式</td>
+                        <td>班级年级</td>
+                        <td>宿舍</td>
+                        <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td>1511928321</td>
+                            <td>李四</td>
+                            <td>男</td>
+                            <td>191192747182</td>
+                            <td>1704</td>
+                            <td>南7-201</td>
+                            <td>。。。</td>
+                        </tr>
+                        <tr>
+                            <td>1511928321</td>
+                            <td>李四</td>
+                            <td>男</td>
+                            <td>191192747182</td>
+                            <td>1704</td>
+                            <td>南7-201</td>
+                            <td>。。。</td>
+                        </tr>
+                        <tr>
+                            <td>1511928321</td>
+                            <td>李四</td>
+                            <td>男</td>
+                            <td>191192747182</td>
+                            <td>1704</td>
+                            <td>南7-201</td>
+                            <td>。。。</td>
+                        </tr>
+                        <tr>
+                            <td>1511928321</td>
+                            <td>李四</td>
+                            <td>男</td>
+                            <td>191192747182</td>
+                            <td>1704</td>
+                            <td>南7-201</td>
+                            <td>。。。</td>
+                        </tr>
+                    </table>
+                    <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a  href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul>
+                </section>
+                <!-- 后台账号管理模块 -->
+                <section id="t-manage" >
+                    <button class="bbtn">添加账号</button><button class="bbtn">导入账号</button>
+                    <table rules="rows" >
+                        <tr>
+                        <td>学号</td>
+                        <td>账号类型</td>
+                        <td>姓名</td>
+                        <td>性别</td>
+                        <td>联系方式</td>
+                        <td>账号到期时间</td>
+                        <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td>1511928321</td>
+                            <td>老师</td>
+                            <td>李四</td>
+                            <td>男</td>
+                            <td>191192747182</td>
+                            <td></td>
+                            <td>。。。</td>
+                        </tr>
+                        <tr>
+                            <td>1511928321</td>
+                            <td>老师</td>
+                            <td>李四</td>
+                            <td>男</td>
+                            <td>191192747182</td>
+                            <td></td>
+                            <td>。。。</td>
+                        </tr>
+                        <tr>
+                            <td>1511928321</td>
+                            <td>老师</td>
+                            <td>李四</td>
+                            <td>男</td>
+                            <td>191192747182</td>
+                            <td></td>
+                            <td>。。。</td>
+                        </tr>
+                        <tr>
+                            <td>1511928321</td>
+                            <td>老师</td>
+                            <td>李四</td>
+                            <td>男</td>
+                            <td>191192747182</td>
+                            <td></td>
+                            <td>。。。</td>
+                        </tr>
+                    </table>
+                    <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a  href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul>
+                </section>
+                <!-- 失物招领模块 -->
+                <section id="LostandFound" >
+                    <button class="bbtn">新建拾到物</button><button class="bbtn">新建失物启示</button><input type="text" placeholder="请输入想要搜索的信息" class="input">
+                    <strong>待认领</strong>
+                    <div>
+                        <span class="round"></span>
+                        <span class="message">
+                            <b>蓝色U盘</b><p>学院托管</p><br>
+                            标题：锡科407捡到的蓝色U盘<br>
+                            拾到地址：锡科407<br>
+                            拾到者姓名：老郭(联系方式:19101838471)<br>
+                            拾到时间：2019-08-21<br>
+                        </span>
+                        <span class="edit">
+                                <button class="bbtn" >确认认领</button>
+                                <a href="#" >编辑信息</a>
+                                <a href="#" >删除该条目</a>
+                                12<br>
+                        </ul>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="round"></span>
+                        <span class="message">
+                            <b>蓝色U盘</b><p>学院托管</p><br>
+                            标题：锡科407捡到的蓝色U盘<br>
+                            拾到地址：锡科407<br>
+                            拾到者姓名：老郭(联系方式:19101838471)<br>
+                            拾到时间：2019-08-21<br>
+                        </span>
+                        <span class="edit">
+                                <button class="bbtn" >确认认领</button>
+                                <a href="#" >编辑信息</a>
+                                <a href="#" >删除该条目</a>
+                                12<br>
+                        </ul>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="round"></span>
+                        <span class="message">
+                            <b>蓝色U盘</b><p>学院托管</p><br>
+                            标题：锡科407捡到的蓝色U盘<br>
+                            拾到地址：锡科407<br>
+                            拾到者姓名：老郭(联系方式:19101838471)<br>
+                            拾到时间：2019-08-21<br>
+                        </span>
+                        <span class="edit">
+                                <button class="bbtn" >确认认领</button> <button class="bbtn" >无人认领</button>
+                                <a href="#" >编辑信息</a>
+                                <a href="#" >删除该条目</a>
+                                12<br>
+                        </ul>
+                        </span>
+                    </div>
+                    <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a  href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul>
+                      <!-- 代找回 -->
+                    <strong>待找回</strong>
+                    <div>
+                        <span class="round"></span>
+                        <span class="message">
+                            <b>蓝色U盘</b><p>学院托管</p><br>
+                            标题：锡科407捡到的蓝色U盘<br>
+                            拾到地址：锡科407<br>
+                            拾到者姓名：老郭(联系方式:19101838471)<br>
+                            拾到时间：2019-08-21<br>
+                        </span>
+                        <span class="edit">
+                                <button class="bbtn" >确认认领</button>
+                                <a href="#" >编辑信息</a>
+                                <a href="#" >删除该条目</a>
+                                12<br>
+                        </ul>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="round"></span>
+                        <span class="message">
+                            <b>蓝色U盘</b><p>学院托管</p><br>
+                            标题：锡科407捡到的蓝色U盘<br>
+                            拾到地址：锡科407<br>
+                            拾到者姓名：老郭(联系方式:19101838471)<br>
+                            拾到时间：2019-08-21<br>
+                        </span>
+                        <span class="edit">
+                                <button class="bbtn" >确认认领</button>
+                                <a href="#" >编辑信息</a>
+                                <a href="#" >删除该条目</a>
+                                12<br>
+                        </ul>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="round"></span>
+                        <span class="message">
+                            <b>蓝色U盘</b><p>学院托管</p><br>
+                            标题：锡科407捡到的蓝色U盘<br>
+                            拾到地址：锡科407<br>
+                            拾到者姓名：老郭(联系方式:19101838471)<br>
+                            拾到时间：2019-08-21<br>
+                        </span>
+                        <span class="edit">
+                                <button class="bbtn" >确认认领</button> <button class="bbtn" >无人认领</button>
+                                <a href="#" >编辑信息</a>
+                                <a href="#" >删除该条目</a>
+                                12<br>
+                        </ul>
+                        </span>
+                    </div>
+                    <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a  href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul>
+                    <!-- 已领回 -->
+                    <strong>已领回</strong>
+                    <div>
+                        <span class="round"></span>
+                        <span class="message">
+                            <b>蓝色U盘</b><p>学院托管</p><br>
+                            标题：锡科407捡到的蓝色U盘<br>
+                            拾到地址：锡科407<br>
+                            拾到者姓名：老郭(联系方式:19101838471)<br>
+                            拾到时间：2019-08-21<br>
+                        </span>
+                        <span class="edit">
+                                <a href="#" >删除该条目</a>
+                                12<br>
+                        </ul>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="round"></span>
+                        <span class="message">
+                            <b>蓝色U盘</b><p>学院托管</p><br>
+                            标题：锡科407捡到的蓝色U盘<br>
+                            拾到地址：锡科407<br>
+                            拾到者姓名：老郭(联系方式:19101838471)<br>
+                            拾到时间：2019-08-21<br>
+                        </span>
+                        <span class="edit">
+                                <a href="#" >删除该条目</a>
+                                <p>无人认领</p><br>
+                                12<br>
+                        </ul>
+                        </span>
+                    </div>
+                    <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a  href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul>
+                    <!-- 已找回 -->
+                    <strong>已找回</strong>
+                    <div>
+                        <span class="round"></span>
+                        <span class="message">
+                            <b>蓝色U盘</b><p>学院托管</p><br>
+                            标题：锡科407捡到的蓝色U盘<br>
+                            拾到地址：锡科407<br>
+                            拾到者姓名：老郭(联系方式:19101838471)<br>
+                            拾到时间：2019-08-21<br>
+                        </span>
+                        <span class="edit">
+                                <a href="#" >删除该条目</a>
+                                12<br>
+                        </ul>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="round"></span>
+                        <span class="message" style="position: relative;">
+                            <b>蓝色U盘</b><p>学院托管</p><br>
+                            标题：锡科407捡到的蓝色U盘<br>
+                            拾到地址：锡科407<br>
+                            拾到者姓名：老郭(联系方式:19101838471)<br>
+                            拾到时间：2019-08-21<br>
+                            <span style="position: absolute;top: 0px;right: 0px;">
+                                拾到者：小林<br>
+                                拾到者联系方式：10318932892<br>
+                                拾到时间：2019-08-21<br>
+                            </span>
+                        </span>
+
+                        <span class="edit">
+                                <a href="#" >删除该条目</a>
+                                <p>无人认领</p><br>
+                                12<br>
+                        </ul>
+                        </span>
+                    </div>
+                    <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a  href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul>
+                </section>
+                <!-- 新闻管理模块 -->
+                <section id="news" >
+                    <button class="bbtn">创建新闻</button>
+                    <button class="bbtn">删除</button>
+                    <button class="bbtn">置顶</button>
+                    <input type="text" placeholder="填入你想搜索的信息" class="input">
+                    <div style="margin-top:25px ;">
+                        <input type="checkbox"> <b>这是新闻的标题</b>    (置顶)   2019-03-12  撰稿人：XXXX
+                        <a href="">删除</a><a href="">编辑</a> <button class="sbtn">取消发布</button>
+                    </div>
+                    <div>
+                        <input type="checkbox"> <b>这是新闻的标题</b>    (置顶)   2019-03-12  撰稿人：XXXX
+                        <a href="">删除</a><a href="">编辑</a> <button class="sbtn">取消发布</button>
+                    </div>
+                    <div>
+                        <input type="checkbox"> <b>这是新闻的标题</b>    (置顶)   2019-03-12  撰稿人：XXXX
+                        <a href="">删除</a><a href="">编辑</a> <button class="sbtn">取消发布</button>
+                    </div>
+                    <div>
+                        <input type="checkbox"> <b>这是新闻的标题</b>    (置顶)   2019-03-12  撰稿人：XXXX
+                        <a href="">删除</a><a href="">编辑</a> <button class="sbtn">取消发布</button>
+                    </div>
+                    <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a  href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul>
+                </section>
+                <!-- 在线问答模块 -->
+                <section id="online" >
+                    <button class="bbtn">删除</button>
+                    <button class="bbtn">置顶</button>
+                    <button class="bbtn">锁定</button>
+                    <button class="bbtn">问答系统设置</button>
+                    <input type="text" class="input" placeholder="请输入你要查的信息">
+                    <strong>待解决</strong>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        提问人：XXXX    2019-06-30 12:02:22
+                        <span><button class="mbtn">查看</button></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        提问人：XXXX    2019-06-30 12:02:22
+                        <span><button class="mbtn">查看</button></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        提问人：XXXX    2019-06-30 12:02:22
+                        <span><button class="mbtn">查看</button></span>
+                    </div>
+                    <strong>已解决</strong>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        提问人：XXXX    2019-06-30 12:02:22
+                        <span><button class="mbtn">查看</button></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        提问人：XXXX    2019-06-30 12:02:22
+                        <span><button class="mbtn">查看</button></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        提问人：XXXX    2019-06-30 12:02:22
+                        <span><button class="mbtn">查看</button></span>
+                    </div>
+                    <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a  href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul>
+                </section>
+                <!-- 分享资料模块 -->
+                <section id="share" >
+                    <button class="bbtn">上传资料</button>
+                    <button class="bbtn">置顶</button>
+                    <button class="bbtn">删除</button>
+                    <button class="bbtn">共享资料设置</button>
+                    <input type="text" class="input" placeholder="请输入你要查的信息">
+                    <div style="margin-top:25px ;">
+                        <input type="checkbox">
+                        这是一个文件名  (2019-03-11)  上传人：后台管理员   可见范围：全学院
+                        <span><button class="mbtn">下载</button></span>
+                        <a href="">删除</a>
+                    </div>
+                    <div >
+                        <input type="checkbox">
+                        这是一个文件名  (2019-03-11)  上传人：后台管理员   可见范围：全学院
+                        <span><button class="mbtn">下载</button></span>
+                        <a href="">删除</a>
+                    </div>
+                    <div >
+                        <input type="checkbox">
+                        这是一个文件名  (2019-03-11)  上传人：后台管理员   可见范围：全学院
+                        <span><button class="mbtn">下载</button></span>
+                        <a href="">删除</a>
+                    </div>
+                </section>
+                <!-- 值班管理模块 -->
+                <section id="duty" >
+                    <button class="bbtn">安排人员</button>
+                    <button class="bbtn">重置所有安排</button>
+                    <button class="bbtn">登记无课表</button>
+                    <table rules="all" >
+                        <tr>
+                        <td>星期一</td>
+                        <td>星期二</td>
+                        <td>星期三</td>
+                        <td>星期四</td>
+                        <td>星期五</td>
+                        <td>星期六</td>
+                        <td>星期日</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </section>
+            </aside>
+        </article>
+    </main>
+</body>
+<script src="Backgroundsystem.js"></script>
+</html>

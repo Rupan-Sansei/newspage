@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select:none;
+}
+button{
+    cursor:pointer
+}
+a{
+    text-decoration: none;
+    color: #000;
+    cursor:pointer
+}
+li{
+    list-style-type:none
+}
+.nav li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 1300px;
+    margin: 0 auto;
+     
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    height: 80px;
+    line-height:80px;
+    border:1px solid #000;     
+}
+strong{
+    font-size: 25px;
+    padding-left: 20px;
+}
+.headasie{
+    display: inline-block;
+    padding-right: 20px;
+}
+/* 开始主体部分 */
+.nav{
+    width: 205px;   
+}
+.asie{
+    width: 1095px;
+    border: 1px solid #000;
+    border-top: 0;
+}
+article{
+    display: flex;
+}
+.nav li{
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+}
+.nav li:hover{
+    background-color: silver;
+}
+/* 概览模块 */
+#summary{
+    padding: 0px 28px 30px;     
+    overflow: hidden;
+}
+section div{
+    height: 50px;
+    border: 1px solid #000;
+    padding-left: 20px;
+    padding-right: 12px;
+    line-height: 50px;
+    overflow:hidden;
+}
+section strong{
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-left: 0;
+}
+#summary nav{
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.bordertop{
+    border-top: none;
+}
+#summary div span, #online div span, #share div span{
+    float: right;
+}
+button{
+    display: inline-block;
+    border: 0;
+    text-align: center;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #169bd5;
+}
+.bbtn{
+    width: 147px;
+    height: 40px;
+    margin-left: 20px;
+}
+.mbtn{
+    width: 117px;
+    height: 40px;
+    margin-left: 10px;
+}
+.sbtn{
+    margin-top: 10px;
+    width: 117px;
+    height: 30px;
+}
+p{
+    display: inline-block;
+    height: 20px;
+    margin-left: 10px;
+    line-height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    background-color: #d7d7d7;
+}
+.asie section{
+    padding: 30px 28px 30px;
+    position: relative;
+}
+table{
+    margin-top: 28px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    width: 100%;
+    text-align: center;  
+}
+td{
+    height: 45px;
+}
+/* 分页按钮 */
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+/* 失物招领模块 */
+section .input{
+    display: inline-block;
+    width: 350px;
+    height: 43px;
+    position: absolute;
+    right: 28px;
+}
+#LostandFound div{
+    height: 148px;
+    display: flex;
+    padding: 12px 20px 14px 12px;   
+}
+#LostandFound div .round{
+    width: 120px;
+    background-color:silver; 
+}
+#LostandFound div .message{
+    line-height: normal;
+    width:534px;
+    margin-left: 10px; 
+}
+b{
+    font-size:x-large;
+}
+.edit{
+    line-height: normal;
+    flex-grow: 1; 
+    text-align: right;
+}
+.edit a{
+    display: block;
+    margin-top: 6px;
+}
+#LostandFound ul ,#news ul, #online ul{ 
+    margin-top: 15px;
+}
+#news div input ,#online div input{
+    display: inline-block;
+    margin-right: 15px;
+}
+#news div a,#news div button,#share div a{
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+

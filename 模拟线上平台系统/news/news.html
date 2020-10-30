@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻管理</title>
+</head>
+<link rel="stylesheet" href="../Backgroundsystem.css">
+<link rel="stylesheet" href="news.css">
+<script src="../jquery-3.1.1.min.js"></script>
+<script >
+$(function(){
+    $('#common-header').load('../common-header.html');
+    $('#common-menu').load('../common-menu.html')
+})
+
+</script>
+<body>
+    <nav class="main">
+        <header id="common-header"></header>
+        <article>
+            <!-- 左边的导航 -->
+            <nav class="nav" id="common-menu"></nav> 
+            <aside class="asie">
+                <!-- 新闻管理模块 -->
+                <section id="news">
+                    <button class="bbtn" id="C-news">创建新闻</button>
+                    <button class="bbtn" id="D-news">删除</button>
+                    <button class="bbtn" id="T-news">置顶</button>
+                    <input type="text" placeholder="填入你想搜索的信息" class="input" id="seach">
+                    <!-- <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a  href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul> -->
+                </section>
+                <section id="editnews" >    
+                <button class="bbtn"  id="keep">保存</button>
+                <button class="bbtn" type="button" id="draft">存为草稿</button>
+                <a id="cancel-C">取消</a>
+                <small>新闻标题</small>
+                <input type="text" class="en-input" name="title">
+                <small>新闻发表时间</small>
+                <input type='text' class="en-input" name="time">
+                <small><input type="checkbox">同时作为通知发送</small>
+                <textarea cols="30" rows="10" name="newscontent"></textarea> 
+                <!-- <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a  href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul> -->
+                </section>
+            </aside>
+        </article>
+    </nav>
+</body>
+<script src="news.js"></script>
+</html>
