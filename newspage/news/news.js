@@ -209,3 +209,30 @@ $('#draft').on('click', function(){
         }
     })
 })
+//-----------分页
+$('#news>ul').on('click', 'li', function(){
+    $('#news>div').detach()
+    $.ajax({
+        type:'post',
+        url:'../php/chagepage.php',
+        data:'page=' + $(this).attr('name'),
+        dataType:'json',
+        success:function(msg){  //请求成功后的回调函数
+            let top = ''
+            $.each(msg, function(i, data){
+            if(data[4]==1){
+                top='(置顶)'
+            }else{
+                top='    '
+            }    
+            $('.input').after(`
+            <div id="` +data[3] +`">
+            <input type="checkbox"> <b>`+ data[0] +`</b>    `+top+`   `+ data[1] +`  撰稿人：XXXX
+            <a class="D_news">删除</a><a class="E_news">编辑</a> <button class="sbtn">取消发布</button>
+            </div>
+            `)
+            })    
+        }
+    })
+
+})
